@@ -1,4 +1,6 @@
 z = str(input('enter file name exactly, with .txt at the end'))
+#k = str(input())
+#print(k)
 f = open(z, 'r')
 
 txt = f.readlines()
@@ -6,8 +8,12 @@ f.close()
 print(txt[0],txt[1],txt[2], sep ='\n') #testing
 del txt[1]
 del txt[0]
-line_last = txt.index('\t\t\t\t\t\t\t\t\t\n')
+if '\t\t\t\t\t\t\t\t\t\n' in txt:
+    line_last = txt.index('\t\t\t\t\t\t\t\t\t\n')
+elif '\t\t\t\t\t\t\t\t\t\t\n' in txt:
+    line_last = txt.index('\t\t\t\t\t\t\t\t\t\t\n')
 length_txt = len(txt)
+#print(txt) #testing
 #print(len(txt), line_last)#testing
 for count_delete in range(length_txt-1,line_last-1,-1): 
     #print(count_delete) #testing
