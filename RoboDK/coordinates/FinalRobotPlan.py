@@ -1,25 +1,31 @@
 from robolink import *   
 from robodk import *  
 
-data = open('AE1222-2021-GROUP-E09H-CoordinateFile-PanelRootTop.txt')
+data = open('C:/Users/damia/OneDrive/Documents/GitHub/E09H-Wingbox/RoboDK/coordinates/coordinates txt files/panels/AE1222-2021-GROUP-E09H-CoordinateFile-PanelRootTop.txt')
 POINTS = []
 
 
 
 
 # read table and get rid of fat
+x = 0
+y = 0
+z = 0
+
+
+table = []
+test = []
+
 for line in data:
     row = line.split('\t')
-    rowclean = []
-    for item in row:
-        item.strip('\t')
-        if item == '':
-            pass
-        else:
-            rowclean.append(item)
-    del rowclean[3]
-    res = [float(i) for i in rowclean]
-    POINTS.append(res)
+    for i in range(7):
+        del row[-1]
+    res = [float(i) for i in row]
+    res[0] += x
+    res[1] += y
+    res[2] += z
+    table.append(res)
+print(table)
 
 
 
