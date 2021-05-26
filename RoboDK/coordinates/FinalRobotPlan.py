@@ -1,7 +1,7 @@
 from robolink import *   
 from robodk import *  
 
-data = open('wingbox_robodk_panel_root_top_coordinates generator txt v3')
+data = open('AE1222-2021-GROUP-E09H-CoordinateFile-PanelRootTop.txt')
 POINTS = []
 
 
