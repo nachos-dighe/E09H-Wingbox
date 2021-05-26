@@ -1,7 +1,7 @@
 from robolink import *   
 from robodk import *  
 
-data = open('wingbox_robodk_coordinates generator txt formatted.txt')
+data = open('wingbox_robodk_panel_root_top_coordinates generator txt v3')
 POINTS = []
 
 
