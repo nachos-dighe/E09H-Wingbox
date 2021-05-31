@@ -1,7 +1,7 @@
 from robolink import *   
 from robodk import *  
 
-data = open('AE1222-2021-GROUP-E09H-CoordinateFile-PanelRootTop.txt')
+data = open('AE1222-2021-GROUP-E09H-CoordinateFile-PanelTipBottom.txt')
 
 
 
