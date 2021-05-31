@@ -1,7 +1,7 @@
 from robolink import *   
 from robodk import *  
 
-data = open('AE1222-2021-GROUP-E09H-CoordinateFile-PanelRootTop.txt')
+data = open('AE1222-2021-GROUP-E09H-CoordinateFile-SidePanelRootShort.txt')
 
 
 
@@ -19,7 +19,7 @@ test = []
 
 for line in data:
     row = line.split('\t')
-    for i in range(7):
+    for i in range(8):
         del row[-1]
     res = [float(i) for i in row]
     res[0] += x
