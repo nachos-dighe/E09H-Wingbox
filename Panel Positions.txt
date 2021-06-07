@@ -1,0 +1,11 @@
+# [x, y, z]
+
+PanelRootBottom = [1000, 1000, 500]
+PanelRootTop = [1000, 500, 500]
+PanelTipBottom = [1075, 0, 500]
+PanelTipTop = [1075, -500, 500]
+
+SidePanelRootLong = [-575, -1600, 500]
+SidePanelRootShort = [-575, -1400, 500]
+SidePanelTipLong = [-500, -1200, 500]
+SidePanelTipShort = [-500, -1000, 500]
